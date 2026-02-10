@@ -1,11 +1,5 @@
-let workoutName: string = "String Manipulation"; 
-let difficultyLevel: number = 1;
+interface User { id: number; name: string; email: string; }
 
-console.log("Starting Practice: " + workoutName); 
-console.log("Level: " + difficultyLevel);
+const newUser: User = { id: 1, name: "Pranjali", email: "pranjali@example.com" };
 
-if (difficultyLevel < 5) { 
-    console.log("Status: Ready to learn the basics!"); 
-} else { 
-    console.log("Status: Ready for a challenge!"); 
-}
+console.log("Mock Database Entry Created for: " + newUser.name);
