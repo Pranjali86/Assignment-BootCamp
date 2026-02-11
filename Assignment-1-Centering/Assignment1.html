@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>
+            Assignment 1 - Age old question — How to center a div
+        </title>
+        <style>
+            .card{
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f0f0f0;
+            max-width: 400px; 
+            width: 90%;
+            }
+            body{
+                background-color: white;
+                font-family: Calibri;
+                overflow-x: hidden;
+            }
+            input{
+                border: 1px solid rgb(200, 197, 197); padding: 10 40 10 40; margin: 10; border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="display: flex; min-height: 100vh; flex-direction: column; flex: 1; justify-content: center; align-items: center; height: 100%;">
+            <span style="border: 1px; padding: 0;">
+                <div>
+                <p style="font-size: 24; text-align: center; font-weight: 600;">Create an Account</p>
+                <button style="text-align: center; border: 1px solid #ddd; padding: 10 40 10 40; border-radius: 8px; border-color:rgb(200, 197, 197); margin: 10;">
+                    <span class="material-symbols-outlined"><img src="https://www.gstatic.com/images/branding/product/2x/googleg_48dp.png" alt="Google Icon" style="width: 20px; margin-right: 10px; align: left;"></span>
+                    Sign Up With Google
+                </button>
+                </div>
+                <br><hr style="border: 1px solid rgb(200, 197, 197);"><br>
+                Email
+                <br>
+                <input type="email">
+                <br><br>
+                Password 
+                <br>
+                <input type="password">
+                <br>
+                <input type="text" style="background-color: rgb(200, 197, 197); text-align: center;" placeholder="Sign Up">
+                <p style="text-align: center;">Already Registered? <a href="/">Sign In</a></p>
+            </span>
+        </div>
+        <footer style="text-align: center; position: relative; box-sizing: border-box; padding: 20px;">
+            By continuing, you agree to our <a href="/">Terms of Service</a> and <a href="/">Privacy Policy</a>
+        </footer>
+    </body>
+</html>
