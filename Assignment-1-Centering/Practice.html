@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Sales - ElevenLabs Semantic</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Layout Structure */
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+        }
+
+        /* Left Side Styles */
+        .info-section {
+            background-color: #141414;
+            color: white;
+            padding: 80px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .info-section header h2 {
+            margin-bottom: 60px;
+            font-size: 1.2rem;
+        }
+
+        .info-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        /* Semantic List Styling */
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 60px;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+
+        /* Footer / Social Proof */
+        .social-proof p {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .logo-cloud {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            opacity: 0.6;
+            filter: grayscale(1) invert(1);
+            margin-bottom: 30px;
+        }
+
+        /* Right Side Styles */
+        .form-section {
+            background-color: white;
+            padding: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        article {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        button[type="submit"] {
+            background: black;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Abstract Background */
+        .wave-bg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(to top, #222, transparent);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="info-section">
+            <header>
+                <h2>IIElevenLabs</h2>
+            </header>
+
+            <section>
+                <h1>Contact our sales team</h1>
+                
+                <ul class="feature-list">
+                    <li>
+                        <i data-lucide="rocket"></i>
+                        <span>Custom pricing and elevated concurrency</span>
+                    </li>
+                    <li>
+                        <i data-lucide="shield-check"></i>
+                        <span>Enterprise-grade security including SOC II, GDPR and HIPAA compliance</span>
+                    </li>
+                    <li>
+                        <i data-lucide="file-text"></i>
+                        <span>Enterprise support and SLAs</span>
+                    </li>
+                </ul>
+            </section>
+
+            <footer class="social-proof">
+                <p>Trusted by 10,000+ leading businesses</p>
+                <div class="logo-cloud">
+                    <span>CISCO</span> <span>TELEKOM</span> <span>DISNEY</span>
+                </div>
+                <aside>
+                    <span>★★★★★ 4.5 stars and 1,059+ reviews</span>
+                </aside>
+            </footer>
+
+            <div class="wave-bg"></div>
+        </section>
+
+        <section class="form-section">
+            <article>
+                <header>
+                    <h1>Contact sales form</h1>
+                    <p>Please fill out the form below to get started</p>
+                </header>
+
+                <form>
+                    <fieldset>
+                        <label for="website">Company Website</label>
+                        <input type="text" id="website" name="website" placeholder="100xdevs.com">
+
+                        <label for="email">Business Email</label>
+                        <input type="email" id="email" name="email" placeholder="admin@100xdevs.com">
+                    </fieldset>
+
+                    <nav>
+                        <button type="submit">Next</button>
+                        </nav>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
