@@ -1,0 +1,281 @@
+<html>
+<head>
+    <title>Stretch Assignment</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: black;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .main {
+            background: radial-gradient(circle at 50% -20%, #312e81 0%, transparent 50%), radial-gradient(circle at 0% 100%, #1e1b4b 0%, transparent 40%);
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            justify-content: space-between;
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            align-items: center;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        .left {
+            font-weight: 800;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        .center {
+            justify-content: center;
+            display: flex;
+            padding: 0.5rem 1.5rem;
+            gap: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .center a {
+            color: #9ca3af;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+
+        .right {
+            color: #9ca3af;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .circle {
+            width: 24px;
+            height: 24px;
+            background: #e67e22;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .middle {
+            text-align: center;
+            margin-top: 4rem;
+            max-width: 800px;
+            z-index: 10;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+            line-height: 1.1;
+        }
+
+        p {
+            color: #9ca3af;
+            font-size: 1.1rem;
+        }
+
+        .middle-down {
+            font-family: 'Inter', sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 10px; 
+        }
+        .middle-down1 {
+            width: 100%; 
+            max-width: 800px; 
+            background-color: #0a0a0a; 
+            border: 1px solid #1a1a1a; 
+            border-radius: 12px; 
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5); 
+            overflow: hidden;
+        }
+        .middle-inside {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 1.5rem;
+            align-items: center; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 15px 16px; 
+            border-bottom: 1px solid #1a1a1a;
+        }
+        .middle-inside1{         
+            padding: 5px 15px; 
+            min-height: 120px;
+            display: flex; 
+            gap: 10px; 
+            color: #333; 
+            font-family: monospace; 
+            font-size: 16px;
+        }
+        .middle-inside2{
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 10px 14px; 
+            background-color: #080808;
+            border: 1px solid #222;  
+            border-radius: 6px; 
+            color: #333;
+        }
+        .middle-inside3{
+            display: flex; 
+            align-items: center; 
+            gap: 20px; 
+            color: #444; 
+            font-size: 14px;
+        }
+        .middle-inside4{
+            background-color: #1e1b4b; 
+            color: #6366f1; 
+            padding: 4px 12px; 
+            border-radius: 15px; 
+            display: flex; 
+            align-items: center; 
+            gap: 5px; 
+            font-size: 14px; 
+            border: 1px solid #312e81;
+        }
+        .middle-down2{
+            display: flex; 
+            align-items: 
+            center; gap: 15px; 
+            margin-top: 30px;
+        }
+        .middle-inside5{
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            background-color: #1a1a2e; 
+            color: #555; 
+            padding: 8px 16px; 
+            border-radius: 5px; 
+            border: 1px solid #2e2e4a; 
+            font-size: 14px;
+        }
+        .left1{
+            position: absolute; 
+            bottom: 60px; 
+            left: 60px; 
+            text-align: left;
+        }
+        .left1 a{
+            background: #6366f1; 
+            color: white; 
+            padding: 12px 24px; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            display: inline-block; 
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="left">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#6366f1">
+                    <path d="M12 2L2 19h20L12 2z" />
+                </svg>
+                WINTERFELL
+            </div>
+            <div class="center">
+                <a href="#">Feature</a>
+                <a href="#">Pricing</a>
+                <a href="#">Faq</a>
+                <a href="#">About</a>
+            </div>
+            <div class="right">
+                harkirat's Winterfell
+                <div class="circle">
+                    h
+                </div>
+            </div>
+        </nav>
+        <div class="middle">
+            <h1>Ship Solana Contracts <br>in Minutes not Months</h1>
+            <p>
+                Winterfell eats <span style="text-decoration: line-through; opacity: 0.6;">months</span>.
+                Ships in <span style="text-decoration: underline; color: white;">minutes</span>.
+            </p>
+            <div class="middle-down">
+                <div class="middle-down1">
+                    <div class="middle-inside">
+                        <div style="display: flex; gap: 8px; align-items: center;">
+                            <div style="width: 10px; height: 10px; border-radius: 50%; background-color: #333;"></div>
+                            <div style="width: 10px; height: 10px; border-radius: 50%; background-color: #333;"></div>
+                            <div style="width: 10px; height: 10px; border-radius: 50%; background-color: #333;"></div>
+                            <span style="color: #666; font-size: 13px; margin-left: 10px; font-family: monospace;">>_ winterfell.dev</span>
+                        </div>
+                        <div style="color: #444; font-size: 13px; display: flex; align-items: center; gap: 5px;">
+                            <div style="width: 6px; height: 6px; border-radius: 50%; background-color: #444;"></div>
+                            <span>idle</span>
+                        </div>
+                    </div>
+                    <div class="middle-inside1">
+                            <span>></span>
+                            <span style="color: #222;">create a counter contract...</span>
+                    </div>
+
+                    <div class="middle-inside2">
+                        <div class="middle-inside3">
+                            <div class="middle-inside4">
+                                <span style="font-size: 18px;">∞</span>
+                                <span style="font-size: 10px; opacity: 0.7;">^</span>
+                            </div>
+                                <span style="font-size: 16px;">📁</span>
+                                <span>templates</span>
+                                <span style="color: #222;">| 0 / 200</span>
+                        </div>
+                            <span style="border: 1px solid #111; background-color: #111; color: #333;">→</span> 
+                    </div>
+                </div>
+                <div class="middle-down2">
+                    <div class="middle-inside5">
+                        <span style="color: #ef4444;">>_</span> Generate
+                    </div>
+                    <span style="color: gray">→</span>
+                    <div class="middle-inside5">
+                        <span style="color: #fbbf24;">⚡</span> Deploy
+                    </div>
+                    <span style="color: gray ;">→</span>
+                    <div class="middle-inside5">
+                        <span style="color: #22c55e;">📄</span> Integrate
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="left1">
+            <p style="margin: 0; font-size: 0.9rem; font-weight: bold;">Powered by AI + Anchor</p>
+            <p style="margin: 5px 0; color: #9ca3af; font-size: 0.9rem;">Build Solana Smart Contracts 10x Faster</p>
+            <a href="#">Explore Playground &nbsp; </></a>
+            <p style="color: #6366f1; text-decoration: underline; gap: 4px;">Read Our Docs</p>                
+        </div>
+    </div>
+</body>
+
+</html>

@@ -3,198 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Sales - ElevenLabs Semantic</title>
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Winterfell | Smart Contract Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Base Styles */
+        :root {
+            --bg-dark: #0a0a0c;
+            --accent-purple: #6366f1;
+            --text-gray: #9ca3af;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+        }
+
         body {
             margin: 0;
-            font-family: 'Inter', sans-serif;
-            display: flex;
-            min-height: 100vh;
-        }
-
-        /* Layout Structure */
-        main {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            width: 100%;
-        }
-
-        /* Left Side Styles */
-        .info-section {
-            background-color: #141414;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--bg-dark);
             color: white;
-            padding: 80px;
+            overflow-x: hidden;
+        }
+
+        /* Hero Background with Gradient Glows */
+        .hero-container {
             position: relative;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            align-items: center;
+            background: radial-gradient(circle at 50% -20%, #312e81 0%, transparent 50%),
+                        radial-gradient(circle at 0% 100%, #1e1b4b 0%, transparent 40%);
         }
 
-        .info-section header h2 {
-            margin-bottom: 60px;
-            font-size: 1.2rem;
-        }
-
-        .info-section h1 {
-            font-size: 3.5rem;
-            margin-bottom: 40px;
-            font-weight: 500;
-        }
-
-        /* Semantic List Styling */
-        .feature-list {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 60px;
-        }
-
-        .feature-list li {
+        /* Navbar */
+        nav {
+            width: 100%;
+            max-width: 1200px;
             display: flex;
-            align-items: flex-start;
-            gap: 15px;
-            margin-bottom: 25px;
-            color: #ccc;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            font-weight: 800;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: var(--text-gray);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover { color: white; }
+
+        /* Main Content */
+        .hero-content {
+            text-align: center;
+            margin-top: 5rem;
+            max-width: 800px;
+            z-index: 10;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            color: var(--text-gray);
             font-size: 1.1rem;
         }
 
-        /* Footer / Social Proof */
-        .social-proof p {
-            font-size: 0.8rem;
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .logo-cloud {
-            display: flex;
-            gap: 30px;
-            align-items: center;
+        .highlight {
+            text-decoration: line-through;
             opacity: 0.6;
-            filter: grayscale(1) invert(1);
-            margin-bottom: 30px;
         }
 
-        /* Right Side Styles */
-        .form-section {
-            background-color: white;
-            padding: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        article {
-            max-width: 400px;
-            width: 100%;
-        }
-
-        fieldset {
-            border: none;
-            padding: 0;
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            font-size: 0.9rem;
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
-
-        input {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        button[type="submit"] {
-            background: black;
-            color: white;
-            padding: 10px 30px;
-            border-radius: 25px;
-            border: none;
-            cursor: pointer;
-        }
-
-        /* Abstract Background */
-        .wave-bg {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
+        /* Terminal Mockup */
+        .terminal {
+            background: #000;
+            width: 90%;
+            max-width: 600px;
             height: 200px;
-            background: linear-gradient(to top, #222, transparent);
+            margin: 3rem auto;
+            border-radius: 12px;
+            border: 1px solid #333;
+            padding: 1rem;
+            text-align: left;
+            position: relative;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .terminal-header {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .dot { width: 10px; height: 10px; border-radius: 50%; }
+        .red { background: #ff5f56; }
+        .yellow { background: #ffbd2e; }
+        .green { background: #27c93f; }
+
+        .cursor {
+            color: var(--accent-purple);
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink { 50% { opacity: 0; } }
+
+        /* Bottom CTA Area */
+        .footer-cta {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            text-align: left;
+        }
+
+        .btn-primary {
+            background: var(--accent-purple);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 15px;
+            transition: transform 0.2s;
+        }
+
+        .btn-primary:hover { transform: translateY(-2px); }
+
+        /* Background Cubes (Stylized) */
+        .cube-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0.3;
             pointer-events: none;
         }
     </style>
 </head>
 <body>
 
-    <main>
-        <section class="info-section">
-            <header>
-                <h2>IIElevenLabs</h2>
-            </header>
+<div class="hero-container">
+    <nav>
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--accent-purple)"><path d="M12 2L2 19h20L12 2z"/></svg>
+            WINTERFELL
+        </div>
+        <div class="nav-links">
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Faq</a>
+            <a href="#">About</a>
+        </div>
+        <div class="user-info">
+            <i class="fa-solid fa-house"></i> &nbsp;
+            <span style="font-size: 0.8rem;">harkirat's Winterfell</span>
+        </div>
+    </nav>
 
-            <section>
-                <h1>Contact our sales team</h1>
-                
-                <ul class="feature-list">
-                    <li>
-                        <i data-lucide="rocket"></i>
-                        <span>Custom pricing and elevated concurrency</span>
-                    </li>
-                    <li>
-                        <i data-lucide="shield-check"></i>
-                        <span>Enterprise-grade security including SOC II, GDPR and HIPAA compliance</span>
-                    </li>
-                    <li>
-                        <i data-lucide="file-text"></i>
-                        <span>Enterprise support and SLAs</span>
-                    </li>
-                </ul>
-            </section>
+    <div class="hero-content">
+        <h1>Ship Solana Contracts <br> in Minutes not Months</h1>
+        <p class="subtitle">Winterfell eats <span class="highlight">months</span>. Ships in <span style="text-decoration: underline; color: white;">minutes</span>.</p>
+        
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+                <span style="color: #666; font-size: 0.8rem; margin-left: 10px;">winterfell.dev</span>
+            </div>
+            <div style="font-family: monospace; color: #aaa;">
+                <span style="color: #6366f1;">></span> create a counter contract...<span class="cursor">|</span>
+            </div>
+        </div>
+    </div>
 
-            <footer class="social-proof">
-                <p>Trusted by 10,000+ leading businesses</p>
-                <div class="logo-cloud">
-                    <span>CISCO</span> <span>TELEKOM</span> <span>DISNEY</span>
-                </div>
-                <aside>
-                    <span>★★★★★ 4.5 stars and 1,059+ reviews</span>
-                </aside>
-            </footer>
+    <div class="footer-cta">
+        <p style="margin: 0; font-size: 0.9rem;">Powered by AI + Anchor</p>
+        <p style="margin: 5px 0; color: var(--text-gray);">Build Solana Smart Contracts 10x Faster</p>
+        <a href="#" class="btn-primary">Explore Playground &nbsp; <i class="fa-solid fa-code"></i></a>
+    </div>
+</div>
 
-            <div class="wave-bg"></div>
-        </section>
-
-        <section class="form-section">
-            <article>
-                <header>
-                    <h1>Contact sales form</h1>
-                    <p>Please fill out the form below to get started</p>
-                </header>
-
-                <form>
-                    <fieldset>
-                        <label for="website">Company Website</label>
-                        <input type="text" id="website" name="website" placeholder="100xdevs.com">
-
-                        <label for="email">Business Email</label>
-                        <input type="email" id="email" name="email" placeholder="admin@100xdevs.com">
-                    </fieldset>
-
-                    <nav>
-                        <button type="submit">Next</button>
-                        </nav>
-                </form>
-            </article>
-        </section>
-    </main>
-
-    <script>lucide.createIcons();</script>
 </body>
 </html>
