@@ -1,0 +1,232 @@
+<html>
+    <head>
+        <title>Assihnment 3</title>
+        <meta charset ="utf-8">
+        <meta name="viewport" content="width: width-device; initial-scale=1.0">
+        <style>
+            body{
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: white; 
+                color: #0f172a;
+                -webkit-font-smoothing: antialiased;
+            }
+            .main{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px 170px;
+                border-bottom: 1px solid #f1f5f9;
+                gap: 40px;
+            }
+            .main a{
+                text-decoration: none;
+                color: #64748b;
+                font-weight: 500px;
+                font-size: 14px;
+            }
+            .main1{
+                display: flex; 
+                align-items: center; 
+                gap: 20px; 
+                position: relative;
+            }
+            .main1 input{
+                background-color: #f1f5f9;
+                border: none;
+                border-radius: 20px;
+                padding: 10 20 10 40;
+                font-size: 13px;
+                width: 220px;
+                outline: none;
+            }
+            .main2{
+                width: 38px; 
+                height: 38px; 
+                background-color: #2e1065; 
+                color: white; 
+                border-radius: 50%; 
+                display: flex; 
+                align-items: center; 
+                justify-content: center; 
+                font-weight: bold; 
+                font-size: 14px;
+            }
+            .center{
+                max-width: 1200px; 
+                margin: 0 auto; 
+                padding: 80px 40px; 
+                display: flex; 
+                align-items: center; 
+            }
+            .center h1{
+                font-size: 64px; 
+                font-weight: 800; 
+                color: #001c55; 
+                line-height: 1.1; 
+                margin: 0 0 25px 0;
+            }
+            .center p{
+                font-size: 18px; 
+                color: #64748b; 
+                line-height: 1.6; 
+                max-width: 500px; 
+                margin-bottom: 40px;
+            }
+            .center-arrow{
+                position: absolute;
+                background: white; 
+                border: 1px solid #e2e8f0; 
+                padding: 8px 12px; 
+                border-radius: 8px; 
+                font-weight: bold;
+                z-index: 3; 
+                box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            }
+            .center1{
+                flex: 1;
+                display: inline-flex; 
+                align-items: center; 
+                background-color: #f8fafc; 
+                border: 1px solid #e2e8f0; 
+                border-radius: 20px; 
+                padding: 6px 16px; 
+                margin-bottom: 30px;
+            }
+            .center2{
+                flex: 1; 
+                display: flex; 
+                justify-content: center; 
+                position: relative;
+                width: 340px; 
+                height: 340px;
+            }
+            .center2 img{
+                position: relative; 
+                width: 100%; 
+                height: 100%; 
+                background-color: #2563eb; 
+                border-radius: 30px; 
+                overflow: hidden; 
+                z-index: 2; 
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+                width: 100%; 
+                height: 100%; 
+                object-cover: cover;
+            }
+            .center2-inside{
+                position: absolute; 
+                top: -10px; 
+                left: -10px; 
+                width: 100%; 
+                height: 100%; 
+                border: 2px solid #1d4ed8; 
+                border-radius: 30px; 
+                transform: rotate(-4deg); 
+                z-index: 1;
+            }
+            .down{
+                max-width: 1200px; 
+                margin: 0 auto; 
+                padding: 0 40px 40px 40px;
+            }
+            .down1{
+                background-color: #001c55; 
+                border-radius: 0 0 100px 0; 
+                padding: 50px;
+                display: flex; 
+                justify-content: space-between; 
+                color: white; 
+                align-items: center; 
+                gap: 20px; 
+                flex: 1;
+            }
+            .down2{
+                max-width: 1200px; 
+                margin: 0 auto; 
+                padding: 0 40px 100px 40px; 
+                display: grid; 
+                grid-template-columns: 1fr 1fr; 
+                gap: 30px;
+            }
+            .down2-1{
+                border-radius: 30px; 
+                padding: 40px; 
+                min-height: 200px; 
+                color: white;   
+            }
+            .down2 h3{
+                font-size: 32px; 
+                font-weight: 800; 
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <span style="font-size: 24px; font-weight: 800; color: #001c55; letter-spacing: -0.5px;">100xDevs</span>
+            <div style="display: flex; gap: 30px;">
+                <a href="#">Home</a>
+                <a href="#">Courses</a>
+            </div>
+            <div class="main1">
+                <input type="search" placeholder="Type To Search">
+                <span style="position: absolute; left: 15px; top: 10px; color: #94a3b8;">🔍</span>
+                <div class="main2">
+                    H
+                </div>
+            </div>
+        </div>        
+        <div class="center">
+            <div style="flex: 1;">
+                <div class="center1">
+                    <div style="width: 8px; height: 8px; background-color: #2dd4bf; border-radius: 50%; margin-right: 10px;"></div>
+                    <span style="font-size: 12px; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px;">Join 100,000+ enrolled students today</span>
+                </div>           
+                <h1>Master Full Stack<br>Development</h1>                  
+                <p>Master Full Stack Development through hands-on open source projects. Join a community of developers transforming their careers with practical, real-world programming skills.</p>
+                <div style="display: flex; gap: 15px;">
+                    <button style="padding: 14px 32px; border: 1px solid #cbd5e1; border-radius: 10px; background: white; font-weight: 700; color: #1e293b; cursor: pointer;">Learn more</button>
+                    <button style="padding: 14px 32px; border: none; border-radius: 10px; background-color: #001c55; color: white; font-weight: 700; cursor: pointer; box-shadow: 0 10px 15px -3px rgba(0, 28, 85, 0.3);">Explore Courses</button>
+                </div>
+            </div>
+            <div> 
+                <div class="center2">
+                    <div class="center2-inside"></div>
+                    <img src="https://via.placeholder.com/400x400/2563eb/FFFFFF?text=Instructor" alt="Instructor">
+                    <div class="center-arrow" style=" top: 10px; left: -30px; transform: rotate(-10deg);">&lt;/&gt;</div>  
+                    <div class="center-arrow" style="top: 50px; right: -25px; transform: rotate(15deg);">&lt;/&gt;</div>  
+                    <div class="center-arrow" style="bottom: 20px; left: -20px; transform: rotate(5deg);">&lt;/&gt;</div>  
+                </div>               
+            </div>
+        </div>    
+        <div class="down">
+            <div class="down1">
+                <div style="background-color: rgba(255,255,255,0.1); padding: 15px; border-radius: 15px; font-size: 24px;">👤</div>
+                <div>
+                    <div style="font-size: 32px; font-weight: 800;">27</div>
+                    <div style="font-size: 13px; color: #94a3b8;">Students cracked GSoC 2025</div>
+                </div>
+                <!-- border-left: 1px solid rgba(255,255,255,0.1); border-right: 1px solid rgba(255,255,255,0.1); -->
+                <div style="background-color: rgba(255,255,255,0.1); padding: 15px; border-radius: 15px; font-size: 24px;">🏆</div>
+                <div>
+                    <div style="font-size: 32px; font-weight: 800;">$150K</div>
+                    <div style="font-size: 13px; color: #94a3b8;">Highest International package</div>
+                </div>
+                <div style="background-color: rgba(255,255,255,0.1); padding: 15px; border-radius: 15px; font-size: 24px;">💼</div>
+                <div>
+                    <div style="font-size: 32px; font-weight: 800;">200+</div>
+                    <div style="font-size: 13px; color: #94a3b8;">High paying internships confirmed</div>
+                </div>
+            </div>
+        </div>
+        <div class="down2">
+            <div class="down2-1" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); ">
+                <h3>Job ready skills<br>that matter</h3>
+            </div>
+            <div class="down2-1" style="background-color: #001c55; ">
+                <h3>Personally mentoring<br>India's next 100x engineers</h3> 
+            </div>
+        </div>
+    </body>
+</html>
